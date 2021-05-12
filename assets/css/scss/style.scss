@@ -1,0 +1,97 @@
+@import "variables";
+@import "mixins";
+@import "common";
+
+.header {
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+    }
+    .header__container {
+        width: 100%;
+        height: 100vh;
+        background: url("../../img/header-background.png") center/100% no-repeat;
+    }
+    .header__nav {
+        max-width: 1644px;
+        margin: 0 auto;
+        margin-bottom: 58px;
+    }
+    .nav-bar {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        a {
+            text-transform: uppercase;
+            margin-right: 25px;
+            &:hover {
+                color: $commonColor;
+            }
+            transition: 0.2s linear;
+        }
+        .sign-up__button {
+            margin-left: 45px;
+            background-color: #0063dd;
+            a {
+                margin: auto;
+                color: #fff;
+            }
+            &:hover{
+                border: 2px solid #0063dd;
+                background-color: #fff;
+                a {
+                    margin: auto;
+                    color: #0063dd;
+                }
+            }
+        }
+    }
+    .header__logo {
+        cursor: pointer;
+        display: flex;
+        background-color: $commonColor;
+        width: 179px;
+        height: 100px;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        border-radius: 0px 0px 21.5px 21.5px;
+        a {
+            margin: auto;
+            color: #fff;
+        }
+        &:hover{
+            background-color: #fff;
+            border: 2px solid $commonColor;
+            a{
+                color: $commonColor;
+            }
+        }
+    }
+
+    .header__elements {
+        max-width: 655px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__main-text {
+        margin: 30px;
+    }
+    .header__sub-text {
+        line-height: 1.35;
+    }
+
+    .header__buttons {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .header_button {
+        margin: 15px;
+    }
+}
